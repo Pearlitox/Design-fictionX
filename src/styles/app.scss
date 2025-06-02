@@ -1,0 +1,83 @@
+@import 'utils/variables';
+@import 'components/type';
+@font-face {
+    font-family: figtree;
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+body{
+    margin: 0;
+    font-family: figtree;
+    background: linear-gradient(#0f0f0f, #242424);
+    color: rgb(214, 214, 214);
+
+}
+.menu, .character{
+    top: 0;
+    width: 20%;
+    padding: 2.25em;
+    height: 100vh;
+    position: fixed;
+}
+.menu{
+    border-right: solid 1px white;
+    display: flex;
+    flex-direction: column;
+}
+.character{
+    right: 0;
+    border-left: solid 1px white;
+}
+.chat{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100%;
+    &__you{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__scrollable{
+        position: absolute;
+        top: 20%;
+    }
+    &__bubble{
+        color: black;
+        background-color: white;
+        border-radius: 1000px;
+        padding: 1em;
+    }
+    &__choices{
+        
+        position: absolute;
+        bottom: 5%;
+        &logo{
+            width: 1em;
+            transform: rotate(45deg);
+            padding: 0.5em;
+            border-radius: 1000px;
+            background-color: #0f0f0f;
+        }
+        &--1, &--2{
+            margin: 0.5em;
+            padding: 0.20em 1em ;
+            color: black;
+            background-color: white;
+            border-radius: 1000px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+    }
+}
+.character{
+    &__profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
