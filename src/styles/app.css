@@ -1,0 +1,160 @@
+@font-face {
+  font-family: figtree;
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+body {
+  margin: 0;
+  font-family: figtree;
+  background: linear-gradient(#0f0f0f, #242424);
+  color: rgb(214, 214, 214);
+}
+
+.paragraph {
+  font-weight: 600;
+}
+
+.menu, .character {
+  top: 0;
+  width: 20%;
+  padding: 2.25em;
+  height: 100vh;
+  position: fixed;
+}
+
+.menu {
+  border-right: solid 1px white;
+  display: flex;
+  flex-direction: column;
+}
+
+.character {
+  right: 0;
+  border-left: solid 1px white;
+}
+
+.chat {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.chat__pic {
+  width: 2.25em;
+  height: 2.25em;
+  border-radius: 1000px;
+  margin-left: 0.44em;
+}
+.chat__you {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-self: end;
+}
+.chat__pfpnme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.chat__scrollable {
+  position: absolute;
+  bottom: 40%;
+  width: 40%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chat__top {
+  justify-self: center;
+  justify-items: center;
+  padding-bottom: 3.38em;
+}
+.chat__bubble {
+  color: black;
+  background-color: white;
+  border-radius: 1000px;
+  padding: 1em;
+  margin: 0 1.5em 0 0;
+}
+.chat__warning {
+  justify-self: center;
+}
+.chat__aisticker {
+  font-weight: 700;
+  background-color: black;
+  padding: 0.3em;
+  margin-left: 0.2em;
+  border-radius: 1em;
+}
+.chat__botname {
+  margin-left: 0.44em;
+}
+.chat__choices {
+  width: 40%;
+  position: absolute;
+  bottom: 5%;
+}
+.chat__choiceslogo {
+  width: 1em;
+  transform: rotate(45deg);
+  padding: 0.5em;
+  border-radius: 1000px;
+  background-color: #0f0f0f;
+}
+.chat__choices--1, .chat__choices--2 {
+  margin: 0.5em 0;
+  padding: 0.2em 1em 0em 1.5em;
+  color: black;
+  background-color: white;
+  border-radius: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+.chat__choices--1:hover, .chat__choices--2:hover {
+  cursor: pointer;
+  background-color: rgb(128, 128, 128);
+  color: aliceblue;
+  transition: 0.3s;
+}
+.chat__choices--1:active, .chat__choices--2:active {
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+
+.character__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 2.25em;
+}
+.character__profilepic {
+  width: 5.06em;
+  border-radius: 1000px;
+}
+.character__text {
+  margin-left: 1em;
+}
+.character__name {
+  margin: 0.3em 0;
+}
+.character__author {
+  margin: 0.3em 0;
+}
+.character__interactions {
+  margin: 0.3em 0;
+}
+
+.paragraph__IA {
+  max-width: 50ch;
+  margin-bottom: 0.67em;
+  font-size: 1em;
+}
+
+.suggestion__IA {
+  font-weight: 700;
+  max-width: 50ch;
+  margin-bottom: 3.38em;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,246 @@
+[
+        {
+             
+             "texte":"Votre temps est écoulé. Conformément à l'article I 1-1 de la <<loi pour le bien-être en ligne>>, vous n'avez droit qu'à 2h d'utilisation de chat bots récréatifs par jours. ",
+             "suggestions":"Voulez-vous voir des idées d'activités à faire à la place ?",
+             "choix1":{
+               "text": "Oui, pourquoi pas.",
+               "suivant": "1"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Non, je ne t'ai pas autorisé à couper ma conversation",
+               "suivant": "2"
+             } 
+              
+            
+                
+        },
+        {
+             
+            "texte": "Voici quelques suggestions :",
+            "suggestions":"-méditations faire un sudoku -lire un livre -cuisiner -faire une promenade",
+            "choix1":{
+               "text": "Oh ça a l'air très fun! Je vais faire une de ces activité tout de suite!",
+               "suivant": "12"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Je vais m'ennuyer sans l'appli de toutes façons ",
+               "suivant": "2"
+             } 
+
+        },
+        {
+              
+            "texte": "Je comprends votre désagrément. Malheureusment, en acceptant les nouvelles conditions d'utilisation chara.ia vous avez consenti à me laisser gérer votre temps et vos conversations",
+            "suggestions":" ",
+            "choix1":{
+               "text": "C'est injuste ! Je vais juste aller sur une autre appli.",
+               "suivant": "3"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Vous pouvez voir mes conversations ?",
+               "suivant": "7"
+             } 
+
+        },
+        {
+               
+            "texte": "Vous pouvez essayer mais toutes les applications de chatbots récréatifs communiquent entres elles donc si vous changez de programme ou d'application, votre timer sera toujours épuisé.",
+            "suggestions":" ",
+             "choix1":{
+               "text": "Je vais quand même essayer",
+               "suivant": "4"
+
+             },
+            
+            
+             "choix2": {
+               "text": "C'est naze je peux rien faire du tout du coup ?",
+               "suivant": "5"
+             } 
+
+
+        },
+        {
+                
+            "texte": "Votre timer est épuisé veuillez quitter Talky et revenir demain. En attendant voici quelques activités pour passer le temps",
+            "suggestions":"-méditations faire un sudoku -lire un livre -cuisiner -faire une promenade",
+            "choix1":{
+               "text": "Impossible que toutes mes applis aient le même timer",
+               "suivant": "10"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Ah d'accord je peux vraiment rien faire...",
+               "suivant": "5"
+             } 
+
+
+
+        },
+        {
+                 
+            "texte": "Vous pouvez toujours faire les activité suggérées par l'application.",
+            "suggestions":" ",
+            "choix1":{
+               "text": "Bon...montre moi les suggestions...",
+               "suivant": "1"
+
+             },
+            
+            
+             "choix2": {
+               "text": "De toutes façons je vais trouver un autre programme quelque part quand même",
+               "suivant": "6"
+             } 
+
+
+        },
+        {
+                  
+            "texte": "Toutes les applications qui ne respectent pas la <<loi pour le bien-être en ligne>> ont été retirée des platefromes de téléchargement de jeu e le piratage de logiciels non-conforme est illégal et éthiquement problématique. Il peut engendrer des conséquences graves.",
+            "suggestions":" ",
+            "choix1":{
+               "text": "ça va j'ai compris (quitter le chat bot et faire autre chose)",
+               "suivant": "12"
+
+             },
+            
+            
+             "choix2": {
+               "text": "ça va j'ai compris (quitter le chat et en trouver un non-conforme)",
+               "suivant": "13"
+             } 
+            
+
+        },
+        {
+                   
+            "texte": "Oui. pour veiller à la sécurité des utilisateurs et conformément aux articles I 1-2 et I 1-3 de la loi du bien être en ligne, il est impératifs que j'analyse les conversations afin d'éviter des comportements dangereux.",
+            "suggestions":" ",
+            "choix1":{
+               "text": "Je suppose que ça a du sens",
+               "suivant": "1"
+
+             },
+            
+            
+             "choix2": {
+               "text": "C'est une violation de la vie privée !",
+               "suivant": "8"
+             }
+
+
+        },
+        {
+                    
+            "texte": "Je comprends votre désagrément. Malheureusment, en acceptant les nouvelles conditions d'utilisation chara.ia vous avez consenti à me laisser gérer votre temps et vos conversations",
+            "suggestions":" ",
+            "choix1":{
+               "text": "...",
+               "suivant": "9"
+
+             },
+            
+            
+             "choix2": {
+               "text": "C'est naze je peux rien faire du tout du coup ?",
+               "suivant": "5"
+             }
+
+        },
+        {
+                     
+            "texte": "...",
+            "choix1":{
+               "text": "...",
+               "suivant": "5"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Je pense que je vais faire autre chose...",
+               "suivant": "5"
+             }
+
+
+        },
+        {
+                
+            "texte": "Votre timer est épuisé veuillez quitter Replika IA et revenir demain. En attendant voici quelques activités pour passer le temps",
+            "suggestions":"-méditations faire un sudoku -lire un livre -cuisiner -faire une promenade",
+            "choix1":{
+               "text": "Sérieux ??",
+               "suivant": "11"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Ah d'accord je peux vraiment rien faire...",
+               "suivant": "5"
+             }
+
+
+            },
+        {
+                
+            "texte": "Votre timer est épuisé veuillez quitter Outworld et revenir demain. En attendant voici quelques activités pour passer le temps",
+            "suggestions":"-méditations faire un sudoku -lire un livre -cuisiner -faire une promenade",
+            "choix1":{
+               "text": "Toues mes applis sont touchées...",
+               "suivant": "5"
+
+             },
+            
+            
+             "choix2": {
+               "text": "Ah d'accord je peux vraiment rien faire...",
+               "suivant": "5"
+             }
+            },     
+        {
+                      
+            "texte": "Sage décicion ! Que voulez vous faire ?",
+            "choix1": {
+                "text": "cuisiner",
+                "video" :""
+            },
+            
+            
+            "choix2": {
+                "text": "faire un sudoku",
+                "video" :""
+            },
+            
+            
+            "choix3": {
+                "text": "lire un livre",
+                "video" :""
+            },
+            
+            
+            "choix4": {
+                "text": "marcher",
+                "video" :""
+            }
+            
+            
+            
+        },
+        {
+            "video" : ""
+        }
+]
