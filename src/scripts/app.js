@@ -27,7 +27,6 @@ fetch("./assets/data/data.json")
         };
         const change = () => {
             const clone = youranswer.cloneNode(true);
-
             clone.innerText = gamestate.current.choix1.text;
             clone.classList.add('chat__bubble')
             let answer = document.createElement('p');
@@ -39,18 +38,32 @@ fetch("./assets/data/data.json")
             setTimeout(() =>{
                 conversation.appendChild(answer);
                 conversation.appendChild(suggestion)
+                
             },1000); 
             
-            conversation.appendChild(clone);
+            
             ui.choice1.innerText = gamestate.current.choix1.text;
             ui.choice2.innerText = gamestate.current.choix2.text;
         }
-        ui.bubble1.addEventListener('click', () =>
-            
-            update(gamestate.current.choix1.suivant));
-        ui.bubble2.addEventListener('click', () =>
-            update(gamestate.current.choix2.suivant)
-        
-        );
+        ui.bubble1.addEventListener('click', (function(event){
+            const clone = youranswer.cloneNode(true);
+            if(event.target){
+                clone.innerText = gamestate.current.choix1.text;
+                clone.classList.add('chat__bubble');
+                conversation.appendChild(clone);
+                update(gamestate.current.choix1.suivant);
+            }
+        }))
+        ui.bubble2.addEventListener('click', (function(event){
+            const clone = youranswer.cloneNode(true);
+            if(event.target){
+
+                clone.innerText = gamestate.current.choix2.text;
+                clone.classList.add('chat__bubble');
+                conversation.appendChild(clone);
+                update(gamestate.current.choix2.suivant);
+            }
+        }))
+
         change();
     })

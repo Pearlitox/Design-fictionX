@@ -7,9 +7,13 @@
 body{
     margin: 0;
     font-family: figtree;
-    background: linear-gradient(#0f0f0f, #242424);
+    background: linear-gradient(#111111, #030303,);
     color: rgb(214, 214, 214);
 
+}
+.logo{
+    width: 1.5em;
+    margin: 0.44em;
 }
 .paragraph{
     font-weight: 600;
@@ -25,6 +29,18 @@ body{
     border-right: solid 1px white;
     display: flex;
     flex-direction: column;
+    &__link, &__home{
+        display: flex;
+        flex-direction: row;
+        padding: 0.20em 0.44em;
+        align-items: center;
+        background-color: black;
+        width: fit-content;
+        border-radius: 1000px;
+        border: solid 1px white;
+        color: white;
+        margin: 0.44em 0;
+    }
 }
 .character{
     right: 0;
@@ -72,7 +88,7 @@ body{
         background-color: white;
         border-radius: 1000px;
         padding: 1em;
-        margin : 0 1.5em 0 0;
+        margin : 0 1.5em 2.25em 0;
     }
     &__warning{
         justify-self: center;
