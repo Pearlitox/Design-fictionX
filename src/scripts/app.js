@@ -27,7 +27,11 @@ next.addEventListener('click', function(){
     }
 
 })
-
+const burgermenu = document.querySelector('.burgermenu');
+const character = document.querySelector('.character');
+burgermenu.addEventListener('click', function(){
+    character.classList.toggle('characteractive');
+})
 fetch("./assets/data/data.json")
     .then((response) => {
         return response.json();
@@ -59,6 +63,7 @@ fetch("./assets/data/data.json")
             const clone = youranswer.cloneNode(true);
             clone.innerText = gamestate.current.choix1.text;
             clone.classList.add('chat__bubble')
+            clone.classList.add('chat__you')
             let answer = document.createElement('p');
             let suggestion = document.createElement('p');
             answer.innerText = gamestate.current.texte;
