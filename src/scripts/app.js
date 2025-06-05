@@ -1,3 +1,33 @@
+const context = [
+    "Certaines intelligences artificielles sont conçues pour donner l'impression de parler à des personnages fictifs. Elles sont si bien faites qu'on pourrait avoir l'impression de parler avec une vraie personne.",
+    "Beaucoup de personnes se laissent absorber par l'utilisation de ces IA et finissent même par remplacer leurs relations humaines.",
+    "Mais à quoi ressembleraient ces IA si elles étaient conçues pour éviter l'addiction ?",
+    "Bonne expérience :)"
+]
+const popup = document.querySelector('.popup')
+const chara = document.querySelector('.character')
+const chat = document.querySelector('.chat')
+const menu = document.querySelector('.menu')
+const contexttext = document.querySelector('.popup__text');
+contexttext.innerText = context[0];
+let index = 0
+const next = document.querySelector('.popup__btn');
+next.addEventListener('click', function(){
+    index++
+    contexttext.innerText = context[index];
+    if(index < context.length ){
+        next.innerText = "Suivant";
+    }else if(index === context.length - 1){
+        next.innerText = "Commencer";
+    }else{
+       popup.classList.add('hidden');
+       chara.classList.remove('blurr');
+       chat.classList.remove('blurr');
+       menu.classList.remove('blurr');
+    }
+
+})
+
 fetch("./assets/data/data.json")
     .then((response) => {
         return response.json();

@@ -15,89 +15,103 @@
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
-  <section class="menu">
-    <h2 class="menu__logo">
-      chara.ia
-    </h2>
-    <a class="menu__link" href="">
-      <img src="assets/images/plus.svg" alt="plus logo" class="logo">
-      <p class="menu__p">Créer</p></a>
-    <a class="menu__home" href="">
-      <img src="assets/images/compass.svg" alt="compass logo" class="logo">
-      <p class="menu__p">Découvrir</p>
-    </a>
-    <form action="">
-      <input type="text" placeholder=Rechercher>
-      <img src="assets/images/search.svg" alt="search logo" class="logo">
-      
-    </form>
+  <section class="popup">
+    <div class="popup__context">
+      <h2 class="popup__title">
+          Un peu de contexte...
+      </h2>
+      <p class="popup__text">
+        
+      </p>
+    
+      <button class="popup__btn btn">Suivant</button>
+    </div>
+    
   </section>
-  <main class="chat">
-    <div class="chat__scrollable">
-      <div class="chat__top">
-        <p class="chat__p">Your are now talking to...</p>
-        <h2 class="chat__title">Your character</h2>
+    <section class="menu blurr">
+      <h2 class="menu__logo">
+        chara.ia
+      </h2>
+      <div class="menu__link btn">
+        <img src="assets/images/plus.svg" alt="plus logo" class="logo">
+        <p class="menu__p">Créer</p></div>
+      <div class="menu__home btn">
+        <img src="assets/images/compass.svg" alt="compass logo" class="logo">
+        <p class="menu__p">Découvrir</p>
+      </div>
+      <form action="">
+        <input class="btn" type="text" placeholder=Rechercher>
+        <img src="assets/images/search.svg" alt="search logo" class="logo">
+        
+      </form>
+    </section>
+    <main class="chat blurr">
+      <div class="chat__scrollable">
+        <div class="chat__top">
+          <p class="chat__p">Your are now talking to...</p>
+          <h2 class="chat__title">Your character</h2>
+          <img class="character__profilepic" src="assets/images/drawingurl sitting down.png" alt=" profile picture of the character">
+        </div>
+      
+        <div class="chat__bot">
+          <div class="chat__pfpnme">
+            <img class="chat__pic" src="assets/images/girldrawing.png" alt="your profile pic">
+            <p class="chat__botname">Your character</p>
+            <p class="chat__aisticker">ch.ia</p>
+          </div>
+          
+          <p class="chat__bubble paragraph">
+            Et t'as fait quoi aujourdh'ui ducoup?
+          </p>
+        </div>
+        <div class="chat__you">
+          <div class="chat__pfpnme">
+            <p class="chat__username">You</p>
+            <img class="chat__pic" src="assets/images/girldrawing.png" alt="your profile pic">
+          </div>
+          
+          <p class="chat__bubble paragraph">
+            Pas grand choses, j'étais sur mon PC :D
+          </p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="chat__choices">
+        <div class="chat__choices--1"> 
+          <p class="chat__choicestext chat__choicestext--1">
+            Choix 1
+          </p>
+          <img class="chat__choiceslogo" src="assets/images/plane.svg" alt="plane logo">
+        </div>
+        <div class="chat__choices--2">
+          <p class="chat__choicestext chat__choicestext--2">
+            Choix 2
+          </p>
+          <img class="chat__choiceslogo" src="assets/images/plane.svg" alt="plane logo">
+        </div>
+      
+        <p class="chat__warning">This is A.I. and not a real person. Treat everything it says as fiction.</p>
+      </div>
+    </main> 
+    <section class="character blurr">
+      <div class="character__profile">
         <img class="character__profilepic" src="assets/images/drawingurl sitting down.png" alt=" profile picture of the character">
-      </div>
-
-      <div class="chat__bot">
-        <div class="chat__pfpnme">
-          <img class="chat__pic" src="assets/images/girldrawing.png" alt="your profile pic">
-          <p class="chat__botname">Your character</p>
-          <p class="chat__aisticker">ch.ia</p>
-        </div>
         
-        <p class="chat__bubble paragraph">
-          I've never met someone that is as similar as me.
-        </p>
-      </div>
-      <div class="chat__you">
-        <div class="chat__pfpnme">
-          <p class="chat__username">You</p>
-          <img class="chat__pic" src="assets/images/girldrawing.png" alt="your profile pic">
+        <div class="character__text">
+          <h2 class="character__name">
+            Your character
+          </h2>
+          <p class="character__author">
+            By @Someone
+          </p>
+          <p class="character__interactions">
+            50M interactions
+          </p>
         </div>
-        
-        <p class="chat__bubble paragraph">
-          I love talking to you !
-        </p>
       </div>
-    </div>
-    
-
-    
-    <div class="chat__choices">
-      <div class="chat__choices--1"> 
-        <p class="chat__choicestext chat__choicestext--1">
-          Choix 1
-        </p>
-        <img class="chat__choiceslogo" src="assets/images/plane.svg" alt="plane logo">
-      </div>
-      <div class="chat__choices--2">
-        <p class="chat__choicestext chat__choicestext--2">
-          Choix 2
-        </p>
-        <img class="chat__choiceslogo" src="assets/images/plane.svg" alt="plane logo">
-      </div>
+    </section>
   
-      <p class="chat__warning">This is A.I. and not a real person. Treat everything it says as fiction.</p>
-    </div>
-  </main> 
-  <section class="character">
-    <div class="character__profile">
-      <img class="character__profilepic" src="assets/images/drawingurl sitting down.png" alt=" profile picture of the character">
-      
-      <div class="character__text">
-        <h2 class="character__name">
-          Your character
-        </h2>
-        <p class="character__author">
-          By @Someone
-        </p>
-        <p class="character__interactions">
-          50M interactions
-        </p>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
