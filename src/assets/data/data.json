@@ -13,7 +13,10 @@
              "choix2": {
                "text": "Non, je ne t'ai pas autorisé à couper ma conversation",
                "suivant": "2"
-             } 
+             },
+             "titre":"Titre I : Dispositions Générales",
+             "articletitre": "Article 2 : Limitation du temps d’utilisation.",
+             "article" : " La durée maximale d’utilisation continue d’une application de chatbot est fixée à une heure et trente minutes (1h30)."
               
             
                 
@@ -32,7 +35,7 @@
              "choix2": {
                "text": "Je vais m'ennuyer sans l'appli de toutes façons ",
                "suivant": "2"
-             } 
+             }
 
         },
         {
@@ -66,7 +69,10 @@
              "choix2": {
                "text": "C'est naze je peux rien faire du tout du coup ?",
                "suivant": "5"
-             } 
+             },
+             "titre":"Titre I : Dispositions Générales",
+             "articletitre": "Article 4 : Communication inter-applications",
+             "article" : "Les applications de chatbot doivent mettre en place un système de communication entre elles, permettant de vérifier que l’utilisateur ne les enchaîne pas à la suite afin de contourner les limites de temps ou les restrictions imposées."
 
 
         },
@@ -84,7 +90,11 @@
              "choix2": {
                "text": "Ah d'accord je peux vraiment rien faire...",
                "suivant": "5"
-             } 
+             },
+             "titre":"Titre I : Dispositions Générales",
+             "articletitre": "Article 2 : Limitation du temps d’utilisation.",
+             "article" : " La durée maximale d’utilisation continue d’une application de chatbot est fixée à une heure et trente minutes (1h30)."
+
 
 
 
@@ -139,7 +149,10 @@
              "choix2": {
                "text": "C'est une violation de la vie privée !",
                "suivant": "8"
-             }
+             },
+             "titre":"Titre V : Surveillance et protection des utilisateurs",
+             "articletitre": "Article 10 : Surveillance des échanges à des fins de sécurité",
+             "article" : "Les conversations entre l’utilisateur et l’application chatbot sont susceptibles d’être surveillées automatiquement par des systèmes de modération, à des fins de prévention des risques. Les données sont traitées dans le respect des lois en vigueur sur la vie privée et la protection des données personnelles."
 
 
         },
@@ -191,8 +204,10 @@
              "choix2": {
                "text": "Ah d'accord je peux vraiment rien faire...",
                "suivant": "5"
-             }
-
+             },
+             "titre":"Titre I : Dispositions Générales",
+             "articletitre": "Article 2 : Limitation du temps d’utilisation.",
+             "article" : " La durée maximale d’utilisation continue d’une application de chatbot est fixée à une heure et trente minutes (1h30)."
 
             },
         {
@@ -209,7 +224,10 @@
              "choix2": {
                "text": "Ah d'accord je peux vraiment rien faire...",
                "suivant": "5"
-             }
+             },
+             "titre":"Titre I : Dispositions Générales",
+             "articletitre": "Article 2 : Limitation du temps d’utilisation.",
+             "article" : " La durée maximale d’utilisation continue d’une application de chatbot est fixée à une heure et trente minutes (1h30)."
             },     
         {
                       
