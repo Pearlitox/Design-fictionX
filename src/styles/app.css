@@ -2,6 +2,10 @@
   font-family: figtree;
   src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
 }
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family: figtree;
@@ -281,7 +285,7 @@ body {
   z-index: 10;
   border-radius: 2.25em;
 }
-.fin1__choices p:hover {
+.fin1__choices a:hover {
   background-color: #ffffff;
 }
 
@@ -294,9 +298,30 @@ body {
   transition: 0.5s;
 }
 
+.ending {
+  height: 100vh;
+  padding: 3.38em;
+  box-sizing: border-box;
+}
+.ending__p {
+  max-width: 50ch;
+}
+.ending__title {
+  margin-top: 2.25em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 0.67em;
+}
+
 @media (min-width: 800px) {
   body {
-    font-size: 12px;
+    font-size: 13px;
   }
   .burgermenu {
     display: none;
@@ -329,6 +354,21 @@ body {
   .popup__text {
     width: 50ch;
     text-align: center;
+  }
+  .ending {
+    height: 100vh;
+    padding: 3.38em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ending__p {
+    max-width: 50ch;
+    margin-bottom: 1.5em;
+  }
+  .ending__title {
+    margin-top: 2.25em;
   }
 }
 @media (min-width: 1200px) {
