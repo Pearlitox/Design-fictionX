@@ -252,6 +252,33 @@ body{
     
 
 }
+.fin1{
+    font-size: 1.5em;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__choices{
+        padding: 2.25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: #b3b3b3;
+        color: #000000;
+        width: fit-content;
+        z-index: 10;
+        border-radius: 2.25em;
+        & p:hover{
+            background-color: #ffffff;
+        }
+    }
+ }
 .hidden{
     display: none;
 }
@@ -263,11 +290,13 @@ body{
 @media(min-width: 800px){
     body{
         font-size: 12px;
+
     }
     .burgermenu{
-        right: -100%;
+       display: none;
     }
     .chat{
+
         &__scrollable{
             position: absolute;
             bottom: 40%;
@@ -306,7 +335,7 @@ body{
         font-size: 17px;
     }
     .burgermenu{
-        right: -100%;
+        display: none;
     }
     .chat{
         &__scrollable{

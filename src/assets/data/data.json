@@ -232,6 +232,7 @@
         {
                       
             "texte": "Sage décicion ! Que voulez vous faire ?",
+            "suggestions":" ",
             "choix1": {
                 "text": "cuisiner",
                 "video" :""
@@ -241,22 +242,7 @@
             "choix2": {
                 "text": "faire un sudoku",
                 "video" :""
-            },
-            
-            
-            "choix3": {
-                "text": "lire un livre",
-                "video" :""
-            },
-            
-            
-            "choix4": {
-                "text": "marcher",
-                "video" :""
             }
-            
-            
-            
         },
         {
             "video" : ""

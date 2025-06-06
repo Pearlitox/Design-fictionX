@@ -53,15 +53,17 @@ fetch("./assets/data/data.json")
             bubble1 : document.querySelector('.chat__choices--1'),
             bubble2 : document.querySelector('.chat__choices--2'),
             choice1 : document.querySelector('.chat__choicestext--1'),
-            choice2 : document.querySelector('.chat__choicestext--2')
+            choice2 : document.querySelector('.chat__choicestext--2'),
+            fin1: document.querySelector('.fin1'),
+            fin2: document.querySelector('.badending')
         }
         const update = (suivant) =>{
-            gamestate.index = suivant;
+            gamestate.index = Number(suivant);
             change();
         };
         const change = () => {
             const clone = youranswer.cloneNode(true);
-            clone.innerText = gamestate.current.choix1.text;
+    
             clone.classList.add('chat__bubble')
             clone.classList.add('chat__you')
             let answer = document.createElement('p');
@@ -75,10 +77,21 @@ fetch("./assets/data/data.json")
                 conversation.appendChild(suggestion)
                 
             },1000); 
-            
-            
+            if(gamestate.index === 12){
+                ui.fin1.classList.remove('hidden');
+                chara.classList.add('blurr');
+                chat.classList.add('blurr');
+                menu.classList.add('blurr');
+            }else if(gamestate.index === 13){
+                ui.fin2.classList.remove('hidden');
+                chara.classList.add('blurr');
+                chat.classList.add('blurr');
+                menu.classList.add('blurr');
+            }
+            console.log(gamestate.index)
             ui.choice1.innerText = gamestate.current.choix1.text;
             ui.choice2.innerText = gamestate.current.choix2.text;
+ 
         }
         ui.bubble1.addEventListener('click', (function(event){
             const clone = youranswer.cloneNode(true);
@@ -88,6 +101,8 @@ fetch("./assets/data/data.json")
                 conversation.appendChild(clone);
                 update(gamestate.current.choix1.suivant);
             }
+
+
         }))
         ui.bubble2.addEventListener('click', (function(event){
             const clone = youranswer.cloneNode(true);
@@ -99,6 +114,7 @@ fetch("./assets/data/data.json")
                 update(gamestate.current.choix2.suivant);
             }
         }))
+
 
         change();
     })
