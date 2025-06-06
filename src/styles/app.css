@@ -260,7 +260,7 @@ body {
   background-color: #ffffff;
 }
 
-.fin1 {
+.fin1, .fin2 {
   font-size: 1.5em;
   top: 0;
   position: absolute;
@@ -271,7 +271,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.fin1__choices {
+.fin1__choices, .fin2__choices {
   padding: 2.25em;
   display: flex;
   flex-direction: column;
@@ -285,7 +285,7 @@ body {
   z-index: 10;
   border-radius: 2.25em;
 }
-.fin1__choices a:hover {
+.fin1__choices a:hover, .fin2__choices a:hover {
   background-color: #ffffff;
 }
 
@@ -308,6 +308,9 @@ body {
 }
 .ending__title {
   margin-top: 2.25em;
+}
+.ending__btn {
+  font-size: 1.5em;
 }
 
 .italic {

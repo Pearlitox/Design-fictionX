@@ -55,11 +55,11 @@ fetch("./assets/data/data.json")
             choice1 : document.querySelector('.chat__choicestext--1'),
             choice2 : document.querySelector('.chat__choicestext--2'),
             fin1: document.querySelector('.fin1'),
-            fin2: document.querySelector('.badending')
+            fin2: document.querySelector('.fin2')
         }
         const update = (suivant) =>{
             gamestate.index = Number(suivant);
-            //utilisation de l'Ia (j'avais pas compris que l'index était un string)
+            //utilisation de l'Ia (j'avais pas compris que l'index était un string et mon code ne fonctionnait pas)
             change();
         };
         const change = () => {
@@ -83,6 +83,7 @@ fetch("./assets/data/data.json")
                 chara.classList.add('blurr');
                 chat.classList.add('blurr');
                 menu.classList.add('blurr');
+            //utilisation de L'IA pour comprendre pourquoi Classlist était undefined
             }else if(gamestate.index === 13){
                 ui.fin2.classList.remove('hidden');
                 chara.classList.add('blurr');
@@ -119,3 +120,12 @@ fetch("./assets/data/data.json")
 
         change();
     })
+
+    const menubtn = document.querySelectorAll('.menu__btns')
+    menubtn.forEach((function(btns){
+    btns.addEventListener('click', function(){
+            alert("Votre temps est écoulé. Veuillez quitter l'application")
+        })
+    }
+))
+
