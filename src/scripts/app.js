@@ -41,7 +41,7 @@ fetch("./assets/data/data.json")
         console.log(data)
         const conversation = document.querySelector('.chat__scrollable');
         const youranswer = document.querySelector('.chat__you');
-        const youranswertext = document.querySelector('.chat__bubble');
+
         const gamestate = {
             index: 0,
             data: data,
@@ -59,6 +59,7 @@ fetch("./assets/data/data.json")
         }
         const update = (suivant) =>{
             gamestate.index = Number(suivant);
+            //utilisation de l'Ia (j'avais pas compris que l'index était un string)
             change();
         };
         const change = () => {
